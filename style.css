@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
     font-weight: bold;
-    background-image: url("https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2a/The_desolate_streets_of_Shibuya_%28Anime%29.png/revision/latest?cb=20231228203748");
+    background-image: url('jjk-shibuya.png');
     background-size: cover;
     margin: 0;
     display: flex;
