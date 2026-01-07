@@ -1,6 +1,8 @@
 body{
     font-family: Arial, sans-serif;
     font-weight: bold;
+    background-image: url("https://static.wikia.nocookie.net/jujutsu-kaisen/images/2/2a/The_desolate_streets_of_Shibuya_%28Anime%29.png/revision/latest?cb=20231228203748");
+    background-size: cover;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@ body{
 }
 h1{
     font-size: 3.5rem;
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
 }
 .choices{
     width: 100%;
@@ -26,7 +28,7 @@ h1{
     margin: 0 10px;
     padding: 0;
     border-radius: 50%;
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(22, 100%, 50%);
     cursor: pointer;
     transition: background-color 0.5s ease;
     overflow: hidden;
@@ -40,6 +42,7 @@ h1{
 }
 #playerDisplay, #computerDisplay{
     font-size: 2.5rem;
+    color: whitesmoke;
 }
 #resultDisplay{
     text-align: center;
@@ -55,6 +58,7 @@ h1{
 }
 .scoreDisplay{
     font-size: 2rem;
+    color: whitesmoke;
 }
 .greenText, #playerScoreDisplay{
     color: hsl(130, 84%, 54%);
