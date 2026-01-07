@@ -17,6 +17,13 @@ function playGame(playerChoice){
     if(playerChoice === computerChoice){
         result = "IT'S A TIE!";
     }
+    else if (playerChoice === "mahoraga") {
+        result = "Mahoraga adapted \nYOU WIN!"
+        playerScore++;
+        playerScoreDisplay.textContent = playerScore;
+        resultDisplay.textContent = result;
+        resultDisplay.style.color = "green";
+    }
     else{
         switch(playerChoice){
             case "rock":
