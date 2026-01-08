@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock vs Paper vs Scissor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Rock - Paper - Scissors</h1>
-    
+
     <div class="choices">
-        <button onclick="playGame('rock')">👊</button>
-        <button onclick="playGame('paper')">✋</button>
-        <button onclick="playGame('scissors')">✌</button>
-        <button onclick="playGame('mahoraga')">
-            <img src="https://i.pinimg.com/736x/96/ab/09/96ab095ad3fa638cc892c929439978bb.jpg"
-            id="mahoraga" title="Mahoraga adapst to anything">
-        </button>
+      <button onclick="playGame('rock')">👊</button>
+      <button onclick="playGame('paper')">✋</button>
+      <button onclick="playGame('scissors')">✌</button>
+      <button onclick="playGame('mahoraga')">
+        <img
+          src="https://i.pinimg.com/736x/96/ab/09/96ab095ad3fa638cc892c929439978bb.jpg"
+          id="mahoraga"
+          title="Mahoraga adapst to anything"
+        />
+      </button>
     </div>
 
-    <div id="playerDisplay">PLAYER: </div>
-    <div id="computerDisplay">COMPUTER: </div>
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
     <div id="resultDisplay"></div>
 
-    <div class="scoreDisplay">Player Score: 
-        <span id="playerScoreDisplay">0</span>
+    <div class="scoreDisplay">
+      Player Score:
+      <span id="playerScoreDisplay">0</span>
     </div>
 
-    <div class="scoreDisplay">Computer Score: 
-        <span id="computerScoreDisplay">0</span>
+    <div class="scoreDisplay">
+      Computer Score:
+      <span id="computerScoreDisplay">0</span>
     </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
