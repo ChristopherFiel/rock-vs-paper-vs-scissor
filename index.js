@@ -16,11 +16,8 @@ function playGame(playerChoice) {
   if (playerChoice === computerChoice) {
     result = "IT'S A TIE!";
   } else if (playerChoice === "mahoraga") {
-    result = "Mahoraga adapted \nYOU WIN!";
-    playerScore++;
-    playerScoreDisplay.textContent = playerScore;
-    resultDisplay.textContent = result;
-    resultDisplay.style.color = "green";
+    result = "YOU WIN!";
+    resultDisplay.textContent = "Mahoraga adapted \nYOU WIN!";
   } else {
     switch (playerChoice) {
       case "rock":
@@ -37,7 +34,9 @@ function playGame(playerChoice) {
 
   playerDisplay.textContent = `PLAYER: ${playerChoice}`;
   computerDisplay.textContent = `Computer: ${computerChoice}`;
-  resultDisplay.textContent = result;
+  if (playerChoice !== "mahoraga") {
+    resultDisplay.textContent = result;
+  }
 
   resultDisplay.classList.remove("greenText", "redText");
 
